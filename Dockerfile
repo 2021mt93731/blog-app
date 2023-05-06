@@ -40,7 +40,6 @@ COPY blog-frontend /app/frontend
 RUN mkdir -p /data/db
 RUN chown -R mongodb:mongodb /data/db
 
-
 COPY ./mongod.conf /app
 COPY ./startup.sh /app
 RUN chmod +x /app/startup.sh
